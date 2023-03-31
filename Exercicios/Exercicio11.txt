@@ -1,0 +1,17 @@
+As Formas Normais são uma série de procedimentos aplicados em um banco de dados para garantir que as suas tabelas estejam bem estruturadas e não contenham nenhum tipo de anomalia, seja de inclusão, atualização ou exclusão.
+
+1: Dependência Funcional:
+
+Uma dependência funcional é um relacionamento entre dois ou mais atributos,
+de forma que o valor de um atributo identifica o valor do outro atributo, ou seja, 
+um atributo está relacionado a outro,se nós sabemos qual o CPF de uma pessoa também vamos descobrir o nome.
+
+: Dependência Funcional Parcial:
+
+Uma dependência funcional parcial ocorre quando os atributos não chave (não identificadores) não dependam de toda a chave primária quando ela for composta.
+
+Chave primária: Consideramos como chave primária toda coluna da tabela que identifica de forma única cada linha da tabela.
+
+3: Dependência Funcional Transitiva:
+
+Quando um ou mais campos de uma entidade não são dependentes diretamente da chave primária, ou de parte dela, mas sim dependente de outro campo da tabela (campo este que não a Chave Primária), temos uma dependência funcional transitiva.
