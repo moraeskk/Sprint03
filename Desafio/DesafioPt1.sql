@@ -1,6 +1,13 @@
 create database desafio;
-
 create schema HRsights;
+
+drop table HRsights.tb_empresa cascade;
+drop table HRsights.guarda_operacoes cascade;
+drop table HRsights.tb_cargos cascade;
+drop table HRsights.tb_salario cascade;
+drop table HRsights.tb_funcionario cascade;
+drop table HRsights.tb_dependentes cascade;
+
 create table HRsights.tb_empresa(
 cnpj int primary key,
 razao_social varchar(500),
@@ -68,10 +75,3 @@ constraint fk_funcionario
  		foreign key (id_funcionario)
  		references Hrsights.tb_funcionario(cpf)
 );
-
-drop table HRsights.tb_empresa cascade;
-drop table HRsights.guarda_operacoes cascade;
-drop table HRsights.tb_cargos cascade;
-drop table HRsights.tb_salario cascade;
-drop table HRsights.tb_funcionario cascade;
-drop table HRsights.tb_dependentes cascade;
